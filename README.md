@@ -1,2 +1,0 @@
-# abtme
-About me vibol
