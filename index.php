@@ -6,7 +6,7 @@ global $conn;
 $result = $conn->query("SELECT * FROM profile WHERE id = 1");
 $profile = $result->fetch_assoc();
 
-// Handle AJAX follow click
+
 if (isset($_POST['action']) && $_POST['action'] === 'follow') {
     $id = intval($_POST['id']);
     $conn->query("UPDATE profile SET followers = followers + 1 WHERE id = $id");
